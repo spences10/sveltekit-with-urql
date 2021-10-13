@@ -4,6 +4,7 @@
 
 <script>
   // urql initialization
+  import Post from '$lib/components/post.svelte'
   import { gql, operationStore, query } from '@urql/svelte'
 
   const postsQuery = gql`
@@ -15,7 +16,13 @@
         excerpt
         tags
         coverImage {
-          url
+          url(
+            transformation: {
+              image: {
+                resize: { fit: clip,  width: 600 }
+              }
+            }
+          )
         }
       }
     }
@@ -36,20 +43,17 @@
     {#each $posts.data.posts as post}
       <li>
         <a href={`/posts/${post.slug}`}>
-          <figure>
-            <img src={post.coverImage.url} alt={post.title} />
-          </figure>
-          <h2>{post.title}</h2>
-          <p>{post.excerpt}</p>
-          {#if post.tags}
-            {#each post.tags as tag}
-              <div>
-                <span>{tag}</span>
-              </div>
-            {/each}
-          {/if}
+          <Post {post} />
         </a>
       </li>
     {/each}
   </ul>
 {/if}
+
+<style>
+  li {
+    list-style: none;
+    margin-bottom: 5rem;
+  }
+  
+</style>
