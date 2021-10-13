@@ -1,15 +1,10 @@
+<script context="module">
+  export const prerender = true
+</script>
+
 <script>
   // urql initialization
-  import {
-    gql,
-    initClient,
-    operationStore,
-    query,
-  } from '@urql/svelte'
-
-  initClient({
-    url: 'https://api-eu-central-1.graphcms.com/v2/ckuh5n3l909qh01z6flerahr2/master',
-  })
+  import { gql, operationStore, query } from '@urql/svelte'
 
   const postsQuery = gql`
     query Posts {
@@ -25,9 +20,11 @@
       }
     }
   `
+
+  // request policy is cache-first (default)
   const posts = operationStore(postsQuery)
+
   query(posts)
-  console.log(posts)
 </script>
 
 {#if $posts.fetching}
@@ -35,7 +32,24 @@
 {:else if $posts.error}
   <p>Oopsie! {$posts.error.message}</p>
 {:else}
-  {#each $posts.data.posts as post}
-    <h1>{post.title}</h1>
-  {/each}
+  <ul>
+    {#each $posts.data.posts as post}
+      <li>
+        <a href={`/posts/${post.slug}`}>
+          <figure>
+            <img src={post.coverImage.url} alt={post.title} />
+          </figure>
+          <h2>{post.title}</h2>
+          <p>{post.excerpt}</p>
+          {#if post.tags}
+            {#each post.tags as tag}
+              <div>
+                <span>{tag}</span>
+              </div>
+            {/each}
+          {/if}
+        </a>
+      </li>
+    {/each}
+  </ul>
 {/if}
