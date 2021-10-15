@@ -18,12 +18,11 @@
         coverImage {
           url(
             transformation: {
-              image: {
-                resize: { fit: clip,  width: 600 }
-              }
+              image: { resize: { fit: clip, width: 600 } }
             }
           )
         }
+        markdownContent
       }
     }
   `
@@ -43,7 +42,7 @@
     {#each $posts.data.posts as post}
       <li>
         <a href={`/posts/${post.slug}`}>
-          <Post {post} />
+          <Post {post} copy={false} />
         </a>
       </li>
     {/each}
@@ -55,5 +54,4 @@
     list-style: none;
     margin-bottom: 5rem;
   }
-  
 </style>
