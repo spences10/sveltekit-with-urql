@@ -22,7 +22,9 @@
             }
           )
         }
-        markdownContent
+        content {
+          html
+        }
       }
     }
   `

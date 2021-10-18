@@ -18,7 +18,7 @@
   {/each}
 {/if}
 {#if copy}
-  {@html post.markdownContent}
+  {@html post.html}
 {/if}
 
 <style>
