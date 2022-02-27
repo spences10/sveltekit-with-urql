@@ -7,9 +7,9 @@
 
 <script>
   export let slug
-  import { gql, operationStore, query } from '@urql/svelte'
+  import { gql,operationStore,query } from '@urql/svelte'
 
-  const productQuery = gql`
+  const postQuery = gql`
     query Post($slug: String!) {
       post(where: { slug: $slug }) {
         title
@@ -35,7 +35,7 @@
       }
     }
   `
-  const post = operationStore(productQuery, { slug })
+  const post = operationStore(postQuery, { slug })
 
   query(post)
 </script>
