@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@sveltejs/kit': next
-  '@urql/svelte': 2.0.1
+  '@urql/svelte': 2.0.2
   graphql: 16.5.0
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0
@@ -10,7 +10,7 @@ specifiers:
 
 devDependencies:
   '@sveltejs/kit': 1.0.0-next.350_svelte@3.48.0
-  '@urql/svelte': 2.0.1_graphql@16.5.0+svelte@3.48.0
+  '@urql/svelte': 2.0.2_graphql@16.5.0+svelte@3.48.0
   graphql: 16.5.0
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0_prettier@2.7.1+svelte@3.48.0
@@ -87,8 +87,8 @@ packages:
       wonka: 4.0.15
     dev: true
 
-  /@urql/svelte/2.0.1_graphql@16.5.0+svelte@3.48.0:
-    resolution: {integrity: sha512-0FYPUutCFd6ZljTS5XRcVcBkKk+kVHu98Y9i4reoVz1CPbRraOUX9ya5BtQpTLxemiUfPenUIWkr5DvEwyfugQ==}
+  /@urql/svelte/2.0.2_graphql@16.5.0+svelte@3.48.0:
+    resolution: {integrity: sha512-b/gLJGZK78GHbyKgraEZ09uHcGc4n0RePSIAPhj+sMTnIgRRaMQwU4D88dNruUdU363MCxFmy+d+V3FYNxmgNQ==}
     peerDependencies:
       graphql: ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
       svelte: ^3.0.0
