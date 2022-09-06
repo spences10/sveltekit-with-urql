@@ -1,9 +1,10 @@
 <script>
-  import { initClient } from '@urql/svelte'
+  import { createClient, setContextClient } from '@urql/svelte'
 
-  initClient({
+  const client = createClient({
     url: import.meta.env.VITE_GRAPHQL_URL,
   })
+  setContextClient(client)
 </script>
 
 <main>
