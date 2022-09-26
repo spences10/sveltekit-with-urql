@@ -5,16 +5,16 @@ specifiers:
   '@urql/svelte': 3.0.1
   graphql: 16.6.0
   prettier: 2.7.1
-  prettier-plugin-svelte: 2.7.0
+  prettier-plugin-svelte: 2.7.1
   svelte: 3.50.1
   vite: 3.1.3
 
 devDependencies:
-  '@sveltejs/kit': 1.0.0-next.485_svelte@3.50.1+vite@3.1.3
+  '@sveltejs/kit': 1.0.0-next.504_svelte@3.50.1+vite@3.1.3
   '@urql/svelte': 3.0.1_ozqdroofbz7sjp7a67hzfcjkme
   graphql: 16.6.0
   prettier: 2.7.1
-  prettier-plugin-svelte: 2.7.0_nk6d2fkgcllkkdynqbuearcure
+  prettier-plugin-svelte: 2.7.1_nk6d2fkgcllkkdynqbuearcure
   svelte: 3.50.1
   vite: 3.1.3
 
@@ -49,8 +49,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.485_svelte@3.50.1+vite@3.1.3:
-    resolution: {integrity: sha512-bwgCi27CO4Rn6iOso3QXykdbuJxpnIrTJkSvCXD2lBtNfzsV98jz1R26ERnurvP3inLT3WEEEWPz4qXUm4Ie2A==}
+  /@sveltejs/kit/1.0.0-next.504_svelte@3.50.1+vite@3.1.3:
+    resolution: {integrity: sha512-KrhlSHT3aCVnhRgUoN6aGIjIw3nWEdNwfoZcE1x65F5D7Ju/K9D8dQwyal9v0aBAZyN9nFuXxsYGaMLE9sppfw==}
     engines: {node: '>=16.14'}
     hasBin: true
     requiresBuild: true
@@ -498,8 +498,8 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /prettier-plugin-svelte/2.7.0_nk6d2fkgcllkkdynqbuearcure:
-    resolution: {integrity: sha512-fQhhZICprZot2IqEyoiUYLTRdumULGRvw0o4dzl5jt0jfzVWdGqeYW27QTWAeXhoupEZJULmNoH3ueJwUWFLIA==}
+  /prettier-plugin-svelte/2.7.1_nk6d2fkgcllkkdynqbuearcure:
+    resolution: {integrity: sha512-H33qjhCBZyd9Zr1A5hUAYDh7j0Mf97uvy7XcA7CP4nNSYrNcPvBUf7wI8K9NptWTIs0S41QtgTWmJIUiGlEBtw==}
     peerDependencies:
       prettier: ^1.16.4 || ^2.0.0
       svelte: ^3.2.0
