@@ -1,8 +1,8 @@
 <script>
-	export let data;
-	let { id } = data;
+	export let data
+	let { id } = data
 
-	import { getContextClient, gql, queryStore } from '@urql/svelte';
+	import { getContextClient, gql, queryStore } from '@urql/svelte'
 	const post = queryStore({
 		client: getContextClient(),
 		variables: { id },
@@ -23,7 +23,7 @@
 				}
 			}
 		`,
-	});
+	})
 </script>
 
 <pre>{JSON.stringify($post, null, 2)}</pre>

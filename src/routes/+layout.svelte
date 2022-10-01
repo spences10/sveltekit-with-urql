@@ -1,11 +1,11 @@
 <script>
-	import { createClient, setContextClient } from '@urql/svelte';
-	import '../global.css';
+	import { createClient, setContextClient } from '@urql/svelte'
+	import '../global.css'
 
 	const client = createClient({
 		url: `https://rickandmortyapi.com/graphql`,
-	});
-	setContextClient(client);
+	})
+	setContextClient(client)
 </script>
 
 <main class="container">

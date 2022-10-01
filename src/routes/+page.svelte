@@ -1,6 +1,6 @@
 <script>
 	// urql initialization
-	import { getContextClient, gql, queryStore } from '@urql/svelte';
+	import { getContextClient, gql, queryStore } from '@urql/svelte'
 
 	const charactersQueryStore = queryStore({
 		client: getContextClient(),
@@ -15,7 +15,7 @@
 				}
 			}
 		`,
-	});
+	})
 </script>
 
 <h1>The World of Rick and Morty</h1>

@@ -2,6 +2,7 @@
 	"useTabs": true,
 	"singleQuote": true,
 	"trailingComma": "es5",
+	"semi": false,
 	"printWidth": 70,
 	"arrowParens": "avoid",
 	"proseWrap": "always",
