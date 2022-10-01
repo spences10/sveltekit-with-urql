@@ -1,53 +1,59 @@
 <script>
-  // urql initialization
-  import Post from '$lib/components/post.svelte'
-  import { getContextClient, gql, queryStore } from '@urql/svelte'
+	// urql initialization
+	import { getContextClient, gql, queryStore } from '@urql/svelte';
 
-  const posts = queryStore({
-    client: getContextClient(),
-    query: gql`
-      query Posts {
-        posts {
-          title
-          slug
-          date
-          excerpt
-          tags
-          coverImage {
-            url(
-              transformation: {
-                image: { resize: { fit: clip, width: 600 } }
-              }
-            )
-          }
-          content {
-            html
-          }
-        }
-      }
-    `,
-  })
+	const charactersQueryStore = queryStore({
+		client: getContextClient(),
+		query: gql`
+			query AllCharacters {
+				characters {
+					results {
+						name
+						id
+						image
+					}
+				}
+			}
+		`,
+	});
 </script>
 
-{#if $posts.fetching}
-  <p>Loading...</p>
-{:else if $posts.error}
-  <p>Oopsie! {$posts.error.message}</p>
-{:else}
-  <ul>
-    {#each $posts.data.posts as post}
-      <li>
-        <a href={`/posts/${post.slug}`}>
-          <Post {post} copy={false} />
-        </a>
-      </li>
-    {/each}
-  </ul>
-{/if}
+<h1>The World of Rick and Morty</h1>
+<div class="wrapper">
+	{#if $charactersQueryStore.fetching}
+		<p>Loading...</p>
+	{:else if $charactersQueryStore.error}
+		<p>Oopsie! {$charactersQueryStore.error.message}</p>
+	{:else}
+		{#each $charactersQueryStore.data.characters.results as character}
+			<section>
+				<a sveltekit:prefetch href={`/character/${character?.id}`}>
+					<img src={character?.image} alt={character?.name} />
+					<h2>{character?.name}</h2>
+				</a>
+			</section>
+		{/each}
+	{/if}
+</div>
 
 <style>
-  li {
-    list-style: none;
-    margin-bottom: 5rem;
-  }
+	h1 {
+		font-size: 3em;
+		text-align: center;
+	}
+	.wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	section {
+		width: 200px;
+		margin: 0 10px;
+	}
+	img {
+		width: 100%;
+	}
+	h2 {
+		margin: 0;
+	}
 </style>
