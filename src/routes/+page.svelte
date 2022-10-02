@@ -27,7 +27,7 @@
 	{:else}
 		{#each $charactersQueryStore.data.characters.results as character}
 			<section>
-				<a sveltekit:prefetch href={`/character/${character?.id}`}>
+				<a data-sveltekit-prefetch href={`/character/${character?.id}`}>
 					<img src={character?.image} alt={character?.name} />
 					<h2>{character?.name}</h2>
 				</a>
