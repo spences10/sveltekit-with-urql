@@ -3,7 +3,7 @@
 	let { id } = data
 
 	import { getContextClient, gql, queryStore } from '@urql/svelte'
-	const post = queryStore({
+	const characterQueryStore = queryStore({
 		client: getContextClient(),
 		variables: { id },
 		query: gql`
@@ -26,4 +26,4 @@
 	})
 </script>
 
-<pre>{JSON.stringify($post, null, 2)}</pre>
+<pre>{JSON.stringify($characterQueryStore, null, 2)}</pre>
