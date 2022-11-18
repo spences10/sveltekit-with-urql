@@ -17,7 +17,7 @@
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"@urql/svelte": "3.0.1",
-		"eslint": "8.27.0",
+		"eslint": "8.28.0",
 		"eslint-config-prettier": "8.5.0",
 		"eslint-plugin-svelte3": "4.0.0",
 		"graphql": "16.6.0",
