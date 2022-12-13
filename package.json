@@ -16,7 +16,7 @@
 		"@playwright/test": "1.28.1",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
-		"@urql/svelte": "3.0.1",
+		"@urql/svelte": "3.0.3",
 		"eslint": "8.29.0",
 		"eslint-config-prettier": "8.5.0",
 		"eslint-plugin-svelte3": "4.0.0",
