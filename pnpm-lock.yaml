@@ -35,8 +35,8 @@ devDependencies:
     specifier: 3.59.1
     version: 3.59.1
   svelte-check:
-    specifier: 3.4.1
-    version: 3.4.1(svelte@3.59.1)
+    specifier: 3.4.3
+    version: 3.4.3(svelte@3.59.1)
   typescript:
     specifier: 5.0.4
     version: 5.0.4
@@ -1328,11 +1328,11 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /svelte-check@3.4.1(svelte@3.59.1):
-    resolution: {integrity: sha512-IGaM39594bNc4nJdqFvZc/2Yg9clc5cd6wfSuxlDpinebfiQDaeMH1OrPrdqikGCKUWz61joIEZK7LugQbDkcQ==}
+  /svelte-check@3.4.3(svelte@3.59.1):
+    resolution: {integrity: sha512-O07soQFY3X0VDt+bcGc6D5naz0cLtjwnmNP9JsEBPVyMemFEqUhL2OdLqvkl5H/u8Jwm50EiAU4BPRn5iin/kg==}
     hasBin: true
     peerDependencies:
-      svelte: ^3.55.0 || 4.0.0-next.0 || 4.0.0-next.1 || ^4.0.0
+      svelte: ^3.55.0 || ^4.0.0-next.0 || ^4.0.0
     dependencies:
       '@jridgewell/trace-mapping': 0.3.17
       chokidar: 3.5.3
