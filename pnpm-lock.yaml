@@ -16,7 +16,7 @@ devDependencies:
     version: 1.5.0(svelte@4.1.1)(vite@4.4.9)
   '@urql/svelte':
     specifier: 3.0.4
-    version: 3.0.4(graphql@16.7.1)(svelte@4.1.1)
+    version: 3.0.4(graphql@16.8.0)(svelte@4.1.1)
   eslint:
     specifier: 8.46.0
     version: 8.46.0
@@ -27,8 +27,8 @@ devDependencies:
     specifier: 4.0.0
     version: 4.0.0(eslint@8.46.0)(svelte@4.1.1)
   graphql:
-    specifier: 16.7.1
-    version: 16.7.1
+    specifier: 16.8.0
+    version: 16.8.0
   prettier:
     specifier: 3.0.1
     version: 3.0.1
@@ -460,23 +460,23 @@ packages:
     resolution: {integrity: sha512-SnHmG9wN1UVmagJOnyo/qkk0Z7gejYxOYYmaAwr5u2yFYfsupN3sg10kyzN8Hep/2zbHxCnsumxOoRIRMBwKCg==}
     dev: true
 
-  /@urql/core@3.2.1(graphql@16.7.1):
+  /@urql/core@3.2.1(graphql@16.8.0):
     resolution: {integrity: sha512-vQ54pChHadfa/h3qpaMMhJSrfOhf819mmqJpuhOik9eW7KX4eqm1AaoaMLtTDArDqVsPaT306oWQKgtpI2N4mA==}
     peerDependencies:
       graphql: ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      graphql: 16.7.1
+      graphql: 16.8.0
       wonka: 6.1.2
     dev: true
 
-  /@urql/svelte@3.0.4(graphql@16.7.1)(svelte@4.1.1):
+  /@urql/svelte@3.0.4(graphql@16.8.0)(svelte@4.1.1):
     resolution: {integrity: sha512-tgUhQ3V7Nb4Z1cD4wMyIq1mIfcr+Pxeb4j4bIp9sb0ORNKuLt+msPdc8YgvhHbyDFNrP7X0nrQmXsrunNIOU0w==}
     peerDependencies:
       graphql: ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
       svelte: ^3.0.0
     dependencies:
-      '@urql/core': 3.2.1(graphql@16.7.1)
-      graphql: 16.7.1
+      '@urql/core': 3.2.1(graphql@16.8.0)
+      graphql: 16.8.0
       svelte: 4.1.1
       wonka: 6.1.2
     dev: true
@@ -974,8 +974,8 @@ packages:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
 
-  /graphql@16.7.1:
-    resolution: {integrity: sha512-DRYR9tf+UGU0KOsMcKAlXeFfX89UiiIZ0dRU3mR0yJfu6OjZqUcp68NnFLnqQU5RexygFoDy1EW+ccOYcPfmHg==}
+  /graphql@16.8.0:
+    resolution: {integrity: sha512-0oKGaR+y3qcS5mCu1vb7KG+a89vjn06C7Ihq/dDl3jA+A8B3TKomvi3CiEcVLJQGalbu8F52LxkOym7U5sSfbg==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
     dev: true
 
