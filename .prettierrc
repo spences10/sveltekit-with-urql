@@ -1,11 +1,10 @@
 {
 	"useTabs": true,
 	"singleQuote": true,
-	"trailingComma": "es5",
 	"semi": false,
-	"printWidth": 70,
-	"arrowParens": "avoid",
+	"trailingComma": "all",
 	"proseWrap": "always",
+	"printWidth": 70,
 	"plugins": ["prettier-plugin-svelte"],
 	"pluginSearchDirs": ["."],
 	"overrides": [
