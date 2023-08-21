@@ -1,54 +1,21 @@
-<script>
-	import { createClient, setContextClient } from '@urql/svelte'
-	import '../global.css'
+<script lang="ts">
+	import {
+		Client,
+		cacheExchange,
+		fetchExchange,
+		setContextClient,
+	} from '@urql/svelte'
+	import '../app.postcss'
 
-	const client = createClient({
+	const client = new Client({
 		url: `https://rickandmortyapi.com/graphql`,
+		exchanges: [cacheExchange, fetchExchange],
 	})
 	setContextClient(client)
 </script>
 
-<main class="container">
+<main
+	class="container max-w-3xl mx-auto prose prose-xl prose-h1:text-primary prose-h2:text-primary"
+>
 	<slot />
 </main>
-
-<style>
-	.container {
-		margin-left: auto;
-		margin-right: auto;
-		width: 100%;
-		max-width: 48rem /* 768px */;
-		padding-left: 1rem /* 16px */;
-		padding-right: 1rem /* 16px */;
-	}
-	@media (min-width: 475px) {
-		.container {
-			max-width: 475px;
-		}
-	}
-	@media (min-width: 640px) {
-		.container {
-			max-width: 640px;
-		}
-	}
-	@media (min-width: 768px) {
-		.container {
-			max-width: 768px;
-		}
-	}
-	@media (min-width: 1024px) {
-		.container {
-			max-width: 1024px;
-		}
-	}
-	@media (min-width: 1280px) {
-		.container {
-			max-width: 1280px;
-		}
-	}
-	@media (min-width: 1536px) {
-		.container {
-			max-width: 1536px;
-		}
-	}
-</style>
