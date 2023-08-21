@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	// urql initialization
 	import { getContextClient, gql, queryStore } from '@urql/svelte'
 
@@ -19,41 +19,37 @@
 </script>
 
 <h1>The World of Rick and Morty</h1>
-<div class="wrapper">
+
+<p>Example of using the URQL Svelte bindings.</p>
+<p>
+	Click any of the images to see the data returned from the <a
+		href="https://rickandmortyapi.com/graphql"
+		class="link link-primary"
+	>
+		Rick and Morty GraphQL API
+	</a>
+</p>
+
+<div class="flex flex-wrap justify-between">
 	{#if $charactersQueryStore.fetching}
 		<p>Loading...</p>
 	{:else if $charactersQueryStore.error}
 		<p>Oopsie! {$charactersQueryStore.error.message}</p>
 	{:else}
 		{#each $charactersQueryStore.data.characters.results as character}
-			<section>
-				<a data-sveltekit-prefetch href={`/character/${character?.id}`}>
-					<img src={character?.image} alt={character?.name} />
-					<h2>{character?.name}</h2>
+			<section class="w-52">
+				<a
+					href={`/character/${character?.id}`}
+					class="link link-primary"
+				>
+					<img
+						src={character?.image}
+						alt={character?.name}
+						class="w-full mb-2"
+					/>
+					<h2 class="my-0">{character?.name}</h2>
 				</a>
 			</section>
 		{/each}
 	{/if}
 </div>
-
-<style>
-	h1 {
-		font-size: 3em;
-		text-align: center;
-	}
-	.wrapper {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-	section {
-		width: 200px;
-		margin: 0 10px;
-	}
-	img {
-		width: 100%;
-	}
-	h2 {
-		margin: 0;
-	}
-</style>

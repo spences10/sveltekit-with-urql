@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	export let data
 	let { id } = data
 
@@ -26,4 +26,6 @@
 	})
 </script>
 
-<pre>{JSON.stringify($characterQueryStore, null, 2)}</pre>
+<div class="mockup-code my-5">
+  <pre>{JSON.stringify($characterQueryStore, null, 2)}</pre>
+</div>

@@ -1,6 +1,6 @@
-/** @type {import('@sveltejs/kit').Load} */
+import type { PageLoad } from './$types'
 
-export const load = async ({ params }) => {
+export const load: PageLoad = async ({ params }) => {
 	const { id } = params
 	return { id }
 }
