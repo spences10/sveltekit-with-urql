@@ -25,7 +25,7 @@
 		"@urql/svelte": "^4.1.0",
 		"autoprefixer": "^10.4.19",
 		"daisyui": "^4.9.0",
-		"eslint": "^8.57.0",
+		"eslint": "^9.0.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
 		"graphql": "^16.8.1",
