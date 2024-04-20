@@ -31,7 +31,7 @@ importers:
         version: 7.7.0(eslint@9.1.0)(typescript@5.4.3)
       '@urql/svelte':
         specifier: ^4.1.0
-        version: 4.1.0(graphql@16.8.1)(svelte@4.2.13)
+        version: 4.1.1(graphql@16.8.1)(svelte@4.2.13)
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.38)
@@ -86,8 +86,8 @@ importers:
 
 packages:
 
-  '@0no-co/graphql.web@1.0.4':
-    resolution: {integrity: sha512-W3ezhHGfO0MS1PtGloaTpg0PbaT8aZSmmaerL7idtU5F7oCI+uu25k+MsMS31BVFlp4aMkHSrNRxiD72IlK8TA==}
+  '@0no-co/graphql.web@1.0.7':
+    resolution: {integrity: sha512-E3Qku4mTzdrlwVWGPxklDnME5ANrEGetvYw4i2GCRlppWXXE4QD66j7pwb8HelZwS6LnqEChhrSOGCXpbiu6MQ==}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
     peerDependenciesMeta:
@@ -512,11 +512,11 @@ packages:
     resolution: {integrity: sha512-h0WHOj8MhdhY8YWkzIF30R379y0NqyOHExI9N9KCzvmu05EgG4FumeYa3ccfKUSphyWkWQE1ybVrgz/Pbam6YA==}
     engines: {node: ^18.18.0 || >=20.0.0}
 
-  '@urql/core@4.3.0':
-    resolution: {integrity: sha512-wT+FeL8DG4x5o6RfHEnONNFVDM3616ouzATMYUClB6CB+iIu2mwfBKd7xSUxYOZmwtxna5/hDRQdMl3nbQZlnw==}
+  '@urql/core@5.0.1':
+    resolution: {integrity: sha512-bTtJDbPGF7UNynGt0E0DgokBeGUL9IU33+k7s/c6dvBUjwO2mOxB0GWNe7fhUcqIJAU1sONYkabTep/OGaxhsQ==}
 
-  '@urql/svelte@4.1.0':
-    resolution: {integrity: sha512-Ov3EclCjaXPPTjKNTcIDlAG3qY/jhLjl/J9yyz9FeLUQ9S2jEgsvlzNXibrY27f4ihD4gH36CNGuj1XOi5hEEQ==}
+  '@urql/svelte@4.1.1':
+    resolution: {integrity: sha512-GqgfTtOB6VkQGEazfNl5UasviWjyEZp15I+rG5bpTDQZJSZgkkGZJF+4CdaNNQVBdnWeQlKOsyXRiadYXfe5Vw==}
     peerDependencies:
       svelte: ^3.0.0 || ^4.0.0
 
@@ -1791,7 +1791,7 @@ packages:
 
 snapshots:
 
-  '@0no-co/graphql.web@1.0.4(graphql@16.8.1)':
+  '@0no-co/graphql.web@1.0.7(graphql@16.8.1)':
     optionalDependencies:
       graphql: 16.8.1
 
@@ -2158,16 +2158,16 @@ snapshots:
       '@typescript-eslint/types': 7.7.0
       eslint-visitor-keys: 3.4.3
 
-  '@urql/core@4.3.0(graphql@16.8.1)':
+  '@urql/core@5.0.1(graphql@16.8.1)':
     dependencies:
-      '@0no-co/graphql.web': 1.0.4(graphql@16.8.1)
+      '@0no-co/graphql.web': 1.0.7(graphql@16.8.1)
       wonka: 6.3.4
     transitivePeerDependencies:
       - graphql
 
-  '@urql/svelte@4.1.0(graphql@16.8.1)(svelte@4.2.13)':
+  '@urql/svelte@4.1.1(graphql@16.8.1)(svelte@4.2.13)':
     dependencies:
-      '@urql/core': 4.3.0(graphql@16.8.1)
+      '@urql/core': 5.0.1(graphql@16.8.1)
       svelte: 4.2.13
       wonka: 6.3.4
     transitivePeerDependencies:
