@@ -28,7 +28,7 @@ devDependencies:
     version: 7.9.0(eslint@9.1.1)(typescript@5.4.5)
   '@urql/svelte':
     specifier: ^4.1.1
-    version: 4.1.1(graphql@16.8.1)(svelte@4.2.16)
+    version: 4.2.0(@urql/core@5.0.3)(svelte@4.2.16)
   autoprefixer:
     specifier: ^10.4.19
     version: 10.4.19(postcss@8.4.38)
@@ -834,16 +834,15 @@ packages:
       - graphql
     dev: true
 
-  /@urql/svelte@4.1.1(graphql@16.8.1)(svelte@4.2.16):
-    resolution: {integrity: sha512-GqgfTtOB6VkQGEazfNl5UasviWjyEZp15I+rG5bpTDQZJSZgkkGZJF+4CdaNNQVBdnWeQlKOsyXRiadYXfe5Vw==}
+  /@urql/svelte@4.2.0(@urql/core@5.0.3)(svelte@4.2.16):
+    resolution: {integrity: sha512-88mvnJ+x1Dh/rKrbo7T0C0UnfY1Tv7HEeEg+hMsrZVAqxFbzGR7mXBaZo0XL0AYrvhtGGWsK3l/+Sfj8OoKDSg==}
     peerDependencies:
+      '@urql/core': ^5.0.0
       svelte: ^3.0.0 || ^4.0.0
     dependencies:
       '@urql/core': 5.0.3(graphql@16.8.1)
       svelte: 4.2.16
       wonka: 6.3.4
-    transitivePeerDependencies:
-      - graphql
     dev: true
 
   /@vitest/expect@1.6.0:
