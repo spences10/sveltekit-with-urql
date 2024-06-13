@@ -46,7 +46,7 @@ devDependencies:
     version: 2.39.3(eslint@9.4.0)(svelte@4.2.18)
   graphql:
     specifier: ^16.8.1
-    version: 16.8.1
+    version: 16.8.2
   postcss:
     specifier: ^8.4.38
     version: 8.4.38
@@ -83,7 +83,7 @@ devDependencies:
 
 packages:
 
-  /@0no-co/graphql.web@1.0.7(graphql@16.8.1):
+  /@0no-co/graphql.web@1.0.7(graphql@16.8.2):
     resolution: {integrity: sha512-E3Qku4mTzdrlwVWGPxklDnME5ANrEGetvYw4i2GCRlppWXXE4QD66j7pwb8HelZwS6LnqEChhrSOGCXpbiu6MQ==}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
@@ -91,7 +91,7 @@ packages:
       graphql:
         optional: true
     dependencies:
-      graphql: 16.8.1
+      graphql: 16.8.2
     dev: true
 
   /@alloc/quick-lru@5.2.0:
@@ -826,10 +826,10 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@urql/core@5.0.4(graphql@16.8.1):
+  /@urql/core@5.0.4(graphql@16.8.2):
     resolution: {integrity: sha512-gl86J6B6gWXvvkx5omZ+CaGiPQ0chCUGM0jBsm0zTtkDQPRqufv0NSUN6sp2JhGGtTOB0NR6Pd+w7XAVGGyUOA==}
     dependencies:
-      '@0no-co/graphql.web': 1.0.7(graphql@16.8.1)
+      '@0no-co/graphql.web': 1.0.7(graphql@16.8.2)
       wonka: 6.3.4
     transitivePeerDependencies:
       - graphql
@@ -841,7 +841,7 @@ packages:
       '@urql/core': ^5.0.0
       svelte: ^3.0.0 || ^4.0.0
     dependencies:
-      '@urql/core': 5.0.4(graphql@16.8.1)
+      '@urql/core': 5.0.4(graphql@16.8.2)
       svelte: 4.2.18
       wonka: 6.3.4
     dev: true
@@ -1676,8 +1676,8 @@ packages:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
 
-  /graphql@16.8.1:
-    resolution: {integrity: sha512-59LZHPdGZVh695Ud9lRzPBVTtlX9ZCV150Er2W43ro37wVof0ctenSaskPPjN7lVTIN8mSZt8PHUNKZuNQUuxw==}
+  /graphql@16.8.2:
+    resolution: {integrity: sha512-cvVIBILwuoSyD54U4cF/UXDh5yAobhNV/tPygI4lZhgOIJQE/WLWC4waBRb4I6bDVYb3OVx3lfHbaQOEoUD5sg==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
     dev: true
 
