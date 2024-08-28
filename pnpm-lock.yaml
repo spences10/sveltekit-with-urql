@@ -19,7 +19,7 @@ devDependencies:
     version: 3.1.1(svelte@4.2.18)(vite@5.4.2)
   '@tailwindcss/typography':
     specifier: ^0.5.14
-    version: 0.5.14(tailwindcss@3.4.10)
+    version: 0.5.15(tailwindcss@3.4.10)
   '@typescript-eslint/eslint-plugin':
     specifier: ^8.1.0
     version: 8.1.0(@typescript-eslint/parser@8.1.0)(eslint@9.9.0)(typescript@5.5.4)
@@ -83,8 +83,8 @@ devDependencies:
 
 packages:
 
-  /@0no-co/graphql.web@1.0.7(graphql@16.9.0):
-    resolution: {integrity: sha512-E3Qku4mTzdrlwVWGPxklDnME5ANrEGetvYw4i2GCRlppWXXE4QD66j7pwb8HelZwS6LnqEChhrSOGCXpbiu6MQ==}
+  /@0no-co/graphql.web@1.0.8(graphql@16.9.0):
+    resolution: {integrity: sha512-8BG6woLtDMvXB9Ajb/uE+Zr/U7y4qJ3upXi0JQHZmsKUJa7HjF/gFvmL2f3/mSmfZoQGRr9VoY97LCX2uaFMzA==}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
     peerDependenciesMeta:
@@ -664,10 +664,10 @@ packages:
       - supports-color
     dev: true
 
-  /@tailwindcss/typography@0.5.14(tailwindcss@3.4.10):
-    resolution: {integrity: sha512-ZvOCjUbsJBjL9CxQBn+VEnFpouzuKhxh2dH8xMIWHILL+HfOYtlAkWcyoon8LlzE53d2Yo6YO6pahKKNW3q1YQ==}
+  /@tailwindcss/typography@0.5.15(tailwindcss@3.4.10):
+    resolution: {integrity: sha512-AqhlCXl+8grUz8uqExv5OTtgpjuVIwFTSXTrh8y9/pw6q2ek7fJ+Y8ZEVw7EB2DCcuCOtEjf9w3+J3rzts01uA==}
     peerDependencies:
-      tailwindcss: '>=3.0.0 || insiders'
+      tailwindcss: '>=3.0.0 || insiders || >=4.0.0-alpha.20'
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
@@ -817,7 +817,7 @@ packages:
   /@urql/core@5.0.6(graphql@16.9.0):
     resolution: {integrity: sha512-38rgSDqVNihFDauw1Pm9V7XLWIKuK8V9CKgrUF7/xEKinze8ENKP1ZeBhkG+dxWzJan7CHK+SLl46kAdvZwIlA==}
     dependencies:
-      '@0no-co/graphql.web': 1.0.7(graphql@16.9.0)
+      '@0no-co/graphql.web': 1.0.8(graphql@16.9.0)
       wonka: 6.3.4
     transitivePeerDependencies:
       - graphql
