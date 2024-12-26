@@ -28,13 +28,13 @@ devDependencies:
     version: 8.18.2(eslint@9.17.0)(typescript@5.7.2)
   '@urql/svelte':
     specifier: ^4.2.2
-    version: 4.2.2(@urql/core@5.0.8)(svelte@4.2.19)
+    version: 4.2.2(@urql/core@5.1.0)(svelte@4.2.19)
   autoprefixer:
     specifier: ^10.4.20
     version: 10.4.20(postcss@8.4.49)
   daisyui:
     specifier: ^4.12.22
-    version: 4.12.22(postcss@8.4.49)
+    version: 4.12.23(postcss@8.4.49)
   eslint:
     specifier: ^9.17.0
     version: 9.17.0
@@ -83,8 +83,8 @@ devDependencies:
 
 packages:
 
-  /@0no-co/graphql.web@1.0.11(graphql@16.10.0):
-    resolution: {integrity: sha512-xuSJ9WXwTmtngWkbdEoopMo6F8NLtjy84UNAMsAr5C3/2SgAL/dEU10TMqTIsipqPQ8HA/7WzeqQ9DEQxSvPPA==}
+  /@0no-co/graphql.web@1.0.12(graphql@16.10.0):
+    resolution: {integrity: sha512-BTDjjsV/zSPy5fqItwm+KWUfh9CSe9tTtR6rCB72ddtkAxdcHbi4Ir4r/L1Et4lyxmL+i7Rb3m9sjLLi9tYrzA==}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
     peerDependenciesMeta:
@@ -839,22 +839,22 @@ packages:
       eslint-visitor-keys: 4.2.0
     dev: true
 
-  /@urql/core@5.0.8(graphql@16.10.0):
-    resolution: {integrity: sha512-1GOnUw7/a9bzkcM0+U8U5MmxW2A7FE5YquuEmcJzTtW5tIs2EoS4F2ITpuKBjRBbyRjZgO860nWFPo1m4JImGA==}
+  /@urql/core@5.1.0(graphql@16.10.0):
+    resolution: {integrity: sha512-yC3sw8yqjbX45GbXxfiBY8GLYCiyW/hLBbQF9l3TJrv4ro00Y0ChkKaD9I2KntRxAVm9IYBqh0awX8fwWAe/Yw==}
     dependencies:
-      '@0no-co/graphql.web': 1.0.11(graphql@16.10.0)
+      '@0no-co/graphql.web': 1.0.12(graphql@16.10.0)
       wonka: 6.3.4
     transitivePeerDependencies:
       - graphql
     dev: true
 
-  /@urql/svelte@4.2.2(@urql/core@5.0.8)(svelte@4.2.19):
+  /@urql/svelte@4.2.2(@urql/core@5.1.0)(svelte@4.2.19):
     resolution: {integrity: sha512-6ntLGsWcnNtaMZVmFpePfFTSpYxYpznCAqnuvLDjt7Oa7YqHcFiyPnz7IIsiPD9VE6hZSi0+RwmRk5BMba/teQ==}
     peerDependencies:
       '@urql/core': ^5.0.0
       svelte: ^3.0.0 || ^4.0.0 || ^5.0.0
     dependencies:
-      '@urql/core': 5.0.8(graphql@16.10.0)
+      '@urql/core': 5.1.0(graphql@16.10.0)
       svelte: 4.2.19
       wonka: 6.3.4
     dev: true
@@ -1216,13 +1216,13 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dev: true
 
-  /daisyui@4.12.22(postcss@8.4.49):
-    resolution: {integrity: sha512-HDLWbmTnXxhE1MrMgSWjVgdRt+bVYHvfNbW3GTsyIokRSqTHonUTrxV3RhpPDjGIWaHt+ELtDCTYCtUFgL2/Nw==}
+  /daisyui@4.12.23(postcss@8.4.49):
+    resolution: {integrity: sha512-EM38duvxutJ5PD65lO/AFMpcw+9qEy6XAZrTpzp7WyaPeO/l+F/Qiq0ECHHmFNcFXh5aVoALY4MGrrxtCiaQCQ==}
     engines: {node: '>=16.9.0'}
     dependencies:
       css-selector-tokenizer: 0.8.0
       culori: 3.3.0
-      picocolors: 1.1.0
+      picocolors: 1.1.1
       postcss-js: 4.0.1(postcss@8.4.49)
     transitivePeerDependencies:
       - postcss
