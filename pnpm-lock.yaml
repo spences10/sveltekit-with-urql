@@ -31,7 +31,7 @@ importers:
         version: 8.43.0(eslint@9.20.1(jiti@1.21.6))(typescript@5.7.3)
       '@urql/svelte':
         specifier: ^4.2.2
-        version: 4.2.2(@urql/core@5.1.0(graphql@16.10.0))(svelte@5.19.10)
+        version: 4.2.3(@urql/core@5.1.0(graphql@16.10.0))(svelte@5.19.10)
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.5.2)
@@ -562,8 +562,8 @@ packages:
   '@urql/core@5.1.0':
     resolution: {integrity: sha512-yC3sw8yqjbX45GbXxfiBY8GLYCiyW/hLBbQF9l3TJrv4ro00Y0ChkKaD9I2KntRxAVm9IYBqh0awX8fwWAe/Yw==}
 
-  '@urql/svelte@4.2.2':
-    resolution: {integrity: sha512-6ntLGsWcnNtaMZVmFpePfFTSpYxYpznCAqnuvLDjt7Oa7YqHcFiyPnz7IIsiPD9VE6hZSi0+RwmRk5BMba/teQ==}
+  '@urql/svelte@4.2.3':
+    resolution: {integrity: sha512-v3eArfymhdjaM5VQFp3QZxq9veYPadmDfX7ueid/kD4DlRplIycPakJ2FrKigh46SXa5mWqJ3QWuWyRKVu61sw==}
     peerDependencies:
       '@urql/core': ^5.0.0
       svelte: ^3.0.0 || ^4.0.0 || ^5.0.0
@@ -1676,9 +1676,6 @@ packages:
     engines: {node: '>=8'}
     hasBin: true
 
-  wonka@6.3.4:
-    resolution: {integrity: sha512-CjpbqNtBGNAeyNS/9W6q3kSkKE52+FjIj7AkFlLr11s/VWGUu6a2CdYSdGxocIhIVjaW/zchesBQUKPVU69Cqg==}
-
   wonka@6.3.5:
     resolution: {integrity: sha512-SSil+ecw6B4/Dm7Pf2sAshKQ5hWFvfyGlfPbEd6A14dOH6VDjrmbY86u6nZvy9omGwwIPFR8V41+of1EezgoUw==}
 
@@ -2124,11 +2121,11 @@ snapshots:
     transitivePeerDependencies:
       - graphql
 
-  '@urql/svelte@4.2.2(@urql/core@5.1.0(graphql@16.10.0))(svelte@5.19.10)':
+  '@urql/svelte@4.2.3(@urql/core@5.1.0(graphql@16.10.0))(svelte@5.19.10)':
     dependencies:
       '@urql/core': 5.1.0(graphql@16.10.0)
       svelte: 5.19.10
-      wonka: 6.3.4
+      wonka: 6.3.5
 
   '@vitest/expect@3.0.5':
     dependencies:
@@ -3195,8 +3192,6 @@ snapshots:
     dependencies:
       siginfo: 2.0.0
       stackback: 0.0.2
-
-  wonka@6.3.4: {}
 
   wonka@6.3.5: {}
 
